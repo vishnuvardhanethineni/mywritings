@@ -1,0 +1,81 @@
+<html>
+	<head>
+        
+    </head>
+	<body style="text-align: center;">
+        <h1 style="text-align: center;">REGISTRATION PAGE</h1>
+        <form method="post" name="loginform" action="">
+            <table cellpadding="10" style="margin:10px auto;">
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" name="t1" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="t2" required></td>
+                </tr>
+                <tr>
+                    <td><label for="retype-password">Retype Password:</label></td>
+                    <td><input type="password" id="retype-password" name="t2_retype" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Mobile:</label></td>
+                    <td><input type="text" id="pincode" name="pincode" maxlength="10" pattern="\d{10}" inputmode="numeric" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email-id:</label></td>
+                    <td><input type="email" id="email" name="t4" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td><input type="date" id="dob" name="t5"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td colspan="2" style="text-align:left;">
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female" required>
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="state">State:</label></td>
+                    <td>
+                        <select id="state" name="state">
+                            <option value=""></option>                            
+                            <option value="telangana">Telangana</option>
+                            <option value="andhra pradesh">Andhra Pradesh</option>
+                            <option value="goa">Goa</option>
+                            <option value="madhya pradesh">Madhya Pradesh</option>
+                            <option value="karnataka">Karnataka</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pincode">Zipcode:</label></td>
+                    <td><input type="text" id="pincode" name="pincode" maxlength="6" pattern="\d{6}" inputmode="numeric" required></td>
+                </tr>
+                <tr>
+                    <td><label for="file">Upload Image:</label></td>
+                    <td><input type="file" id="file" name="file" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: left;">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I accept the terms and conditions</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="SUBMIT"></td>
+                    <td style="text-align: center;"><input type="reset" value="RESET"></td>
+                </tr>
+            </table>
+        </form>
+	</body>
+
+</html>
